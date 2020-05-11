@@ -17,11 +17,6 @@
         margin-right: 15px
       }
       
-      .container:hover {:white}
-      
-      
-      
-      
       .phone {
   position:relative;
   top:50px;
@@ -92,40 +87,6 @@ background-position: center
 .button:hover {
   border: 2px solid white;
 }
-
-
-
-      .bar1 {
-        width: 35px;
-        height: 4px;
-        background-color: rgba(220, 220, 220, 0.5);
-        margin-bottom: 8px;
-        transition: 0.4s;
-      }
-      
-      
-
-      .bar2 {
-        width: 35px;
-        height: 4px;
-        background-color: rgba(220, 220, 220, 0.5);
-        margin-bottom: 8px;
-        transition: 0.4s;
-      }
-      
-
-      .bar3 {
-        width: 35px;
-        height: 4px;
-        background-color: rgba(220, 220, 220, 0.5);
-        transition: 0.4s;
-      }
-      
-
-      
-      .material-icons {
-        font-size: 70px
-      }
 
       body {
         font-family: 'Poppins', sans-serif;
@@ -287,6 +248,8 @@ background-position: center
 }
 #phone-logo {margin-top: 70px}
 #slide1 {width:235px; height: 393px}
+.material-icons {font-size: 60px; color: rgba(220, 220, 220, 0.3)}
+.material-icons:hover {color: white}
 
 
     </style>
@@ -302,11 +265,9 @@ background-position: center
 
       <a href="#" style="float:right">
 
-        <div class="container" onclick="myFunction(this)">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-        </div>
+       <span class="material-icons">
+menu
+</span>
       </a>
       <a id="Contact" href="#" style="float:right">Contact</a>
     </div>
