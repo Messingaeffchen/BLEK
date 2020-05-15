@@ -179,18 +179,26 @@
           width: 100%;
           padding: 0;
         }
+        
       }
 
       /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
       @media screen and (max-width: 400px) {
-        .topnav a {
+        .topnav  a{
           float: none;
           width: 100%;
+         
         }
 
-        #logo {
-          visibility: collapse
+        #logo {display:none
+          
         }
+      
+        
+        #App, #About, #Features, #Contact {font-size: 20px}
+       #headline {font-size: 30px}
+       #subline {font-size: 18px}
+        
       }
 
       #logo {
@@ -198,6 +206,8 @@
         border-color: rgba(255, 255, 255, 0.3);
         padding-right: 7px
       }
+      
+      #Contact {width: 50%; margin-right: 85px}
 
       #Features,
       #App,
@@ -321,13 +331,10 @@
         font-size: 60px;
       }
 
-      @media screen and (max-height: 600px) {
-        .overlay a {}
-      }
-
       #close {
         float: right
       }
+      #open {padding-top: 1px}
 
     </style>
   </head>
@@ -339,15 +346,15 @@
       <a href="#" id="Features">Features</a>
       <a href="#" id="App">App</a>
       <a href="#" id="About">About</a>
-      <span style="cursor:pointer;float:right" onclick="openNav()"><span class="material-icons">
+      <a style="cursor:pointer;float:right" onclick="openNav()" id="open"><span class="material-icons">
           menu
-        </span></span>
+          </span></a>
 
       <a id="Contact" href="#" style="float:right">Contact</a>
     </div>
 
 
-    <div id="myNav" class="overlay"><span id="close">
+   <div id="myNav" class="overlay"><span id="close">
         <span style="cursor:pointer" onclick="closeNav()"><span class="material-icons">
             close
           </span></span></span>
@@ -371,7 +378,7 @@
 
     <script>
       function openNav() {
-        document.getElementById("myNav").style.width = "20%";
+        document.getElementById("myNav").style.width = "100%";
       }
 
       function closeNav() {
@@ -385,13 +392,14 @@
 
 
     <div class="header">
-      <h1>Bluetooth Keyboard & Mouse</h1>
+     
+     <h1><span id="headline">Bluetooth Keyboard & Mouse</span></h1>
 
 
 
 
 
-      <a>Turn your device into a customized keyboard & mouse!</a>
+      <a id="subline">Turn your device into a customized keyboard & mouse!</a>
       <div id="smartphone">
         <div class="phone">
           <div class="inner">
